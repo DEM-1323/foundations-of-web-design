@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    background-color: #005A8B;
+}
+header {
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    padding: 1rem 0;
+}
+h1 {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px; /* Adjust this value to change the spacing */
+    transform: translateY(-50%);
+    height: 20px; /* Adjust this value to change the height of the divider */
+    width: 1px;
+    background-color: white;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover, a.active {
+    color: #FEDE42;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.meeting-info th, .meeting-info td {
+    text-align: left;
+    vertical-align: text-top;
+    padding: 10px;
+    border: 0px transparent solid;
+}
+.meeting-info th {
+    padding-left: 0;
+}
+.meeting-info tbody {
+    display: table-row;
+    vertical-align: inherit;
+}
+
+.course-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-schedule th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}

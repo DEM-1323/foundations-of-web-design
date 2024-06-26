@@ -6,9 +6,54 @@
     <title>Foundations of Web Design</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
-    .container li {
-        padding: 5px 0;
-     }
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .container li {
+            padding: 5px 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        .goal {
+            background-color: #005A8B;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .goal span {
+            color: #FEDE42;
+        }
+        .instructions {
+            margin-bottom: 20px;
+        }
+        .code {
+            background-color: #005A8B;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
   </head>
   <body>
@@ -25,13 +70,106 @@
         </ul>
       </nav>
     </header>
-    <main>
-        <div class="container">
-            <h2>Project 1:</h2>
-        </div>
+    <div class="container">
+      <h2>Project 1:</h2>
+      <h3>Creating a Themed Website</h3>
+      
+      <div class="goal">
+          <h3>Goal:</h3>
+          <span>Create a themed website with:
+          <ul>
+              <li>3 webpages</li>
+              <li>Headings, paragraphs, and images</li>
+              <li>Navigation links between pages</li>
+              <li>External links</li>
+              <li>Lists (ordered or unordered)</li>
+          </ul>
+        </span>
+      </div>
+      
+      <div class="instructions">
+          <h3>Instructions:</h3>
+          <h4>Create a New HTML File:</h4>
+          <ul>
+              <li>In your “Week 1” folder, create a new folder named “Project1”.</li>
+              <li>Open your “Project1” folder and create an HTML file named “index.html”.</li>
+          </ul>
+          <h4>Website Requirements:</h4>
+          <ul>
+              <li>Each page should include headings, paragraphs, and images
+                  <ul>
+                      <li>You must use &lt;h1&gt; - &lt;h3&gt; tags</li>
+                      <li>Include 1 image per page</li>
+                  </ul>
+              </li>
+              <li>Use the &lt;div&gt; tag to make distinct sections on at least one page</li>
+              <li>Use the &lt;span&gt; tag to have colored text on the page</li>
+              <li>Use the &lt;a&gt; tag to link to your other HTML pages, and have at least one external link</li>
+              <li>Include the use of lists somewhere on your website
+                  <ul>
+                      <li>Ordered or unordered lists</li>
+                  </ul>
+              </li>
+          </ul>
+          <h4>Create the Additional Pages:</h4>
+          <ul>
+              <li>In your “Project1” folder, create two more HTML files named “page1.html” and “page2.html”.</li>
+          </ul>
+          <h4>Set Up the Basic HTML Structure:</h4>
+          <ul>
+              <li>For each of your HTML files (index.html, page1.html, page2.html), type the following basic HTML structure:</li>
+          </ul>
+          <div class="code">
+              <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Themed Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;navigation&quot;&gt;
+      &lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;
+      &lt;a href=&quot;page1.html&quot;&gt;Page 1&lt;/a&gt;
+      &lt;a href=&quot;page2.html&quot;&gt;Page 2&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+      &lt;!-- Content for each page goes here --&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+          </div>
+          <h4>Adding Content to Each Page:</h4>
+          <ul>
+              <li>Start filling out each page with content related to your theme. Include headings, paragraphs, and images as described in the requirements.</li>
+              <li>Ensure you use &lt;div&gt; for distinct sections and &lt;span&gt; for colored text within your paragraphs.</li>
+              <li>Include links to other pages within the navigation div and at least one external link in the content.</li>
+          </ul>
+          <h4>Viewing Your Web Page:</h4>
+          <ol>
+              <li>Run Your Project with Live Server:
+                  <ul>
+                      <li>Right-click on your “index.html” file and select “Open with Live Server”.</li>
+                      <li>This will open your web page in your default browser.</li>
+                      <li>Navigate through your site using the link in the navigation div.</li>
+                  </ul>
+              </li>
+              <li>Run Your Project with Live Preview:
+                  <ul>
+                      <li>Right-click on your “index.html” file and select “Show Preview”.</li>
+                      <li>This will open your web page in a tab in VS Code next to your HTML file.</li>
+                  </ul>
+              </li>
+          </ol>
+          <h4>Submission:</h4>
+          <ul>
+              <li>Ensure all your files are correctly linked and functional.</li>
+              <li>Compress your “Project1” folder into a zip file.</li>
+              <li>Submit your zipped “Project1” folder with all your HTML files here: <a href="https://liveumb-my.sharepoint.com/:f:/g/personal/david_martinez003_umb_edu/EvoHkZRrHAFJkRfU5RCvW9kB_Yr773oaFl4ThwqC4qz7FA" target="_blank">Submit Project 1</a></li>
+          </ul>
+      </div>
+  </div>
 
       </section>
-    </main>
     <footer>
       <p>&copy; 2024 UMass Boston.</p>
     </footer>

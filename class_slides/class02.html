@@ -14,8 +14,9 @@
       ul.weeks li {
         padding-left: 5px;
       }
-      .pdfobject-container {
+      #pdf-viewer {
         height: 70vh;
+        width: 100%;
         border: 1px solid #ccc;
       }
     </style>
@@ -39,11 +40,13 @@
     <main>
       <section class="page-info">
         <h2>Class 2 Slides:</h2>
-        <div id="my-pdf"></div>
-        <script src="https://unpkg.com/pdfobject"></script>
-        <script>
-          PDFObject.embed("./pdfs/Class02.pdf", "#my-pdf");
-        </script>
+        <div id="my-pdf">
+          <embed
+            id="pdf-viewer"
+            src="./pdfs/Class02.pdf"
+            type="application/pdf"
+          />
+        </div>
       </section>
     </main>
     <footer>

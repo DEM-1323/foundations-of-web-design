@@ -6,54 +6,54 @@
     <title>Foundations of Web Design</title>
     <link rel="stylesheet" href="../styles.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .container li {
-            padding: 5px 0;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            margin-top: 0;
-        }
-        .goal {
-            background-color: #005A8B;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .goal span {
-            color: #FEDE42;
-        }
-        .instructions {
-            margin-bottom: 20px;
-        }
-        .code {
-            background-color: #005A8B;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .container li {
+        padding: 5px 0;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .goal {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .goal span {
+        color: #fede42;
+      }
+      .instructions {
+        margin-bottom: 20px;
+      }
+      .code {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -64,40 +64,49 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../course-info.html">Course Info</a></li>
           <li><a href="../class-slides.html">Class Slides</a></li>
-          <li><a href="../class-exercises.html" class="active">Class Exercises</a></li>
+          <li>
+            <a href="../class-exercises.html" class="active">Class Exercises</a>
+          </li>
           <li><a href="../projects.html">Projects</a></li>
           <li><a href="../resources.html">Resources</a></li>
         </ul>
       </nav>
     </header>
-        <div class="container">
-            <h2>Class Exercise 4:</h2>
-            <h3>Embedding Multimedia in HTML</h3>
-            
-            <div class="goal">
-                <h3>Goal:</h3>
-                <span>Embed an image, a video, and an audio file into an HTML page.
-                </span>
-            </div>
-            
-            <div class="instructions">
-                <h3>Instructions:</h3>
-                <h4>Download <a href="./zips/starter_code04.zip">starter_code04.zip</a>:</h4>
-                <ul>
-                    <li>Unzip the folder and get started with your HTML file</li>
-                </ul>
-                <h4>Create a New HTML File:</h4>
-                <ul>
-                    <li>Open your “Week 2” folder, and create a new folder named “CE04”. </li>
-                    <li>Open your “CE04” folder and create an HTML file named “CE04.html”.</li>
-                </ul>
-                <h4>Basic HTML Structure:</h4>
-                <ul>
-                    <li>Open your “CE04.html” file.</li>
-                    <li>Copy the following basic HTML structure into the file:</li>
-                </ul>
-                <div class="code">
-                    <pre>
+    <div class="container">
+      <h2>Class Exercise 4:</h2>
+      <h3>Embedding Multimedia in HTML</h3>
+
+      <div class="goal">
+        <h3>Goal:</h3>
+        <span
+          >Embed an image, a video, and an audio file into an HTML page.
+        </span>
+      </div>
+
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <h4>
+          Download <a href="./zips/starter_code04.zip">starter_code04.zip</a>:
+        </h4>
+        <ul>
+          <li>Unzip the folder and get started with your HTML file.</li>
+        </ul>
+        <h4>Create a New HTML File:</h4>
+        <ul>
+          <li>
+            Open your “Week 2” folder, and create a new folder named “CE04”.
+          </li>
+          <li>
+            Open your “CE04” folder and create an HTML file named “CE04.html”.
+          </li>
+        </ul>
+        <h4>Basic HTML Structure:</h4>
+        <ul>
+          <li>Open your “CE04.html” file.</li>
+          <li>Copy the following basic HTML structure into the file:</li>
+        </ul>
+        <div class="code">
+          <pre>
     &lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
@@ -123,30 +132,41 @@
         
     &lt;/body&gt;
     &lt;/html&gt;
-</pre>
-                </div>
-                <ul>
-                    <li>Replace the placeholder media links with your own.</li>
-                </ul>
-                <h4>Viewing Your Web Page:</h4>
-                <ol>
-                    <li>Run Your Project with Live Server:
-                        <ul>
-                            <li>Right-click on your “CE04.html” file and select “Open with Live Server”.</li>
-                            <li>This will open your web page in your default browser.</li>
-                            <li>You should now see your embedded content.</li>
-                        </ul>
-                    </li>
-                    <li>Run Your Project with Live Preview:
-                        <ul>
-                            <li>Right-click on your “CE04.html” file and select “Show Preview”.</li>
-                            <li>This will open your web page in a tab in VS Code next to your HTML file.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
+</pre
+          >
         </div>
-      </section>
+        <ul>
+          <li>Replace the placeholder media links with your own.</li>
+        </ul>
+        <h4>Viewing Your Web Page:</h4>
+        <ol>
+          <li>
+            Run Your Project with Live Server:
+            <ul>
+              <li>
+                Right-click on your “CE04.html” file and select “Open with Live
+                Server”.
+              </li>
+              <li>This will open your web page in your default browser.</li>
+              <li>You should now see your embedded content.</li>
+            </ul>
+          </li>
+          <li>
+            Run Your Project with Live Preview:
+            <ul>
+              <li>
+                Right-click on your “CE04.html” file and select “Show Preview”.
+              </li>
+              <li>
+                This will open your web page in a tab in VS Code next to your
+                HTML file.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+
     <footer>
       <p>&copy; 2024 UMass Boston.</p>
     </footer>

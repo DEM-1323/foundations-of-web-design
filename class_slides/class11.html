@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundations of Web Design</title>
+    <link rel="stylesheet" href="../styles.css" />
+
+    <style>
+      ul.weeks {
+        list-style-type: none;
+        padding-left: 5px;
+      }
+      ul.weeks li {
+        padding-left: 5px;
+      }
+      #pdf-viewer {
+        height: 70vh;
+        width: 100%;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Foundations of Web Design</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../course-info.html">Course Info</a></li>
+          <li>
+            <a href="../class-slides.html" class="active">Class Slides</a>
+          </li>
+          <li><a href="../class-exercises.html">Class Exercises</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-info">
+        <h2>Class 11 Slides:</h2>
+        <div id="my-pdf">
+          <embed
+            id="pdf-viewer"
+            src="./pdfs/Class11.pdf"
+            type="application/pdf"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 UMass Boston.</p>
+    </footer>
+  </body>
+</html>

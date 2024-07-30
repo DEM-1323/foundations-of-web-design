@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundations of Web Design</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .container li {
+        padding: 5px 0;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .goal {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .goal span {
+        color: #fede42;
+      }
+      .instructions {
+        margin-bottom: 20px;
+      }
+      .img-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .code {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Foundations of Web Design</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../course-info.html">Course Info</a></li>
+          <li><a href="../class-slides.html">Class Slides</a></li>
+          <li>
+            <a href="../class-exercises.html" class="active">Class Exercises</a>
+          </li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Class Exercise 11:</h2>
+      <h3>Practicing CSS Keyframes</h3>
+
+      <div class="goal">
+        <h3>Goal:</h3>
+        <span
+          >Create a simple animation using CSS keyframes to understand how to
+          define and apply animations to HTML elements.
+        </span>
+      </div>
+
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <h4>
+          Download <a href="./zips/starter_code11.zip">starter_code11.zip</a>:
+        </h4>
+        <ul>
+          <li>Unzip the folder to get started.</li>
+        </ul>
+        <h4>Setup your Files:</h4>
+        <ul>
+          <li>
+            In your “Foundations of Web Design” folder, create a new folder
+            named “Week 6”.
+          </li>
+          <li>
+            Open your “Week 6” folder and drag the files from the “starter_code”
+            folder into your “Week 6” folder.
+          </li>
+          <li>Open your “CE11” folder and edit the “CE11.html” file.</li>
+        </ul>
+        <h4>Add Internal CSS to your HTML File:</h4>
+        <div class="img-container">
+          <img src="../imgs/CE11_Code1.png" width="500px" />
+          <img src="../imgs/CE11_Code2.png" width="500px" />
+        </div>
+
+        <ul>
+          <li>
+            The .animated-box class applies the animation named colorChange
+            which lasts for 4 seconds, runs infinitely, and alternates
+            directions.
+          </li>
+          <li>
+            The @keyframes rule defines the stages of the animation, changing
+            the background color from blue to green to yellow.
+          </li>
+          <li>
+            Use the <code>&lt;style&gt;</code> tag and add the following CSS
+            styles:
+          </li>
+          <ul>
+            <li>Add an additional animation stage at 25% and 75%.</li>
+            <li>Include a background-color change at those stages.</li>
+            <li>Use the transform: rotate() property at each stage.</li>
+            <li>The animated-box should rotate 90 degrees at each stage.</li>
+          </ul>
+        </ul>
+        <h4>Viewing Your Web Page:</h4>
+        <ol>
+          <li>
+            Run Your Project with Live Server:
+            <ul>
+              <li>
+                Right-click on your “CE11.html” file and select “Open with Live
+                Server”.
+              </li>
+              <li>This will open your web page in your default browser.</li>
+              <li>You should now see your custom-styled web page.</li>
+            </ul>
+          </li>
+          <li>
+            Run Your Project with Live Preview:
+            <ul>
+              <li>
+                Right-click on your “CE11.html” file and select “Show Preview”.
+              </li>
+              <li>
+                This will open your web page in a tab in VS Code next to your
+                HTML file.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 UMass Boston.</p>
+    </footer>
+  </body>
+</html>

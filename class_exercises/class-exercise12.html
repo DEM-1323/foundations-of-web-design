@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundations of Web Design</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .container li {
+        padding: 5px 0;
+      }
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .goal {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .goal span {
+        color: #fede42;
+      }
+      .instructions {
+        margin-bottom: 20px;
+      }
+      .img-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .code {
+        background-color: #005a8b;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      a {
+        color: #1e90ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Foundations of Web Design</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../course-info.html">Course Info</a></li>
+          <li><a href="../class-slides.html">Class Slides</a></li>
+          <li>
+            <a href="../class-exercises.html" class="active">Class Exercises</a>
+          </li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Class Exercise 12:</h2>
+      <h3>Practicing CSS Animations and Transitions</h3>
+
+      <div class="goal">
+        <h3>Goal:</h3>
+        <span
+          >Create a webpage using animations and transitions to create
+          interesting effects.
+        </span>
+      </div>
+
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <h4>
+          Download <a href="./zips/starter_code12.zip">starter_code12.zip</a>:
+        </h4>
+        <ul>
+          <li>Unzip the folder to get started.</li>
+        </ul>
+        <h4>Setup your Files:</h4>
+        <ul>
+          <li>
+            Open your “Week 6” folder and drag the files from the “starter_code”
+            folder into your “Week 6” folder.
+          </li>
+          <li>Open your “CE12” folder and edit the “CE12.html” file.</li>
+        </ul>
+        <h4>Add Internal CSS to your HTML File:</h4>
+        <div class="img-container">
+          <img src="../imgs/CE12_goal.gif" width="500px" />
+        </div>
+
+        <ul>
+          <li>
+            Use the <code>&lt;style&gt;</code> tag and add the following CSS
+            styles:
+          </li>
+          <ul>
+            <li>
+              Add a transition property to your .box styles that puts a 0.5s
+              duration and ease on the transform and background-color
+              properties.
+            </li>
+            <li>
+              Add a transform: scale() property and change the background-color
+              to #2ecc71 on your #transition-box:hover styles.
+            </li>
+            <li>
+              Add an animation property to #animation-box assigning the moveBox
+              animation playing infinitely.
+            </li>
+          </ul>
+        </ul>
+        <h4>Viewing Your Web Page:</h4>
+        <ol>
+          <li>
+            Run Your Project with Live Server:
+            <ul>
+              <li>
+                Right-click on your “CE12.html” file and select “Open with Live
+                Server”.
+              </li>
+              <li>This will open your web page in your default browser.</li>
+              <li>You should now see your custom-styled web page.</li>
+            </ul>
+          </li>
+          <li>
+            Run Your Project with Live Preview:
+            <ul>
+              <li>
+                Right-click on your “CE12.html” file and select “Show Preview”.
+              </li>
+              <li>
+                This will open your web page in a tab in VS Code next to your
+                HTML file.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 UMass Boston.</p>
+    </footer>
+  </body>
+</html>

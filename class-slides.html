@@ -12,6 +12,15 @@
       }
       ul.weeks li {
         padding-left: 5px;
+        display: inline-flex;
+      }
+      .preview {
+        width: clamp(100px, 50vw, 500px);
+      }
+      @media (max-width: 500px) {
+        ul.weeks li {
+          display: block;
+        }
       }
     </style>
   </head>
@@ -34,23 +43,11 @@
         <h2>Class Slides</h2>
         <ul class="weeks">
           <h3>Week 1</h3>
-          <li><a href="./class_slides/class01.html">Class 1</a></li>
-          <li><a href="./class_slides/class02.html">Class 2</a></li>
-          <h3>Week 2</h3>
-          <li><a href="./class_slides/class03.html">Class 3</a></li>
-          <li><a href="./class_slides/class04.html">Class 4</a></li>
-          <h3>Week 3</h3>
-          <li><a href="./class_slides/class05.html">Class 5</a></li>
-          <li><a href="./class_slides/class06.html">Class 6</a></li>
-          <h3>Week 4</h3>
-          <li><a href="./class_slides/class07.html">Class 7</a></li>
-          <li><a href="./class_slides/class08.html">Class 8</a></li>
-          <h3>Week 5</h3>
-          <li><a href="./class_slides/class09.html">Class 9</a></li>
-          <li><a href="./class_slides/class10.html">Class 10</a></li>
-          <h3>Week 6</h3>
-          <li><a href="./class_slides/class11.html">Class 11</a></li>
-          <li><a href="./class_slides/class12.html">Class 12</a></li>
+          <li>
+            <a href="./class_slides/class01.html"
+              ><img class="preview" src="imgs/C01_Preview.png" alt="Class 1"
+            /></a>
+          </li>
         </ul>
       </section>
     </main>
